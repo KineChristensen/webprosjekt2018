@@ -1,0 +1,10 @@
+body {
+	background-color: #FFF;
+	color: #000;
+}
+
+#inner {
+	color: black;
+	font-size: 1em;
+	text-transform: none;
+}

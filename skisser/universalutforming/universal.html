@@ -1,0 +1,41 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script src='script.js'></script>
+	<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</head>
+<body>
+
+	<div id="outer">
+	<button id="lrg">large</button>
+	<button id="sml">small</button>
+	<button id="ctrst">contrast</button>
+	<button id="nrml">normal</button>
+	
+	<input onclick='responsiveVoice.speak("Hello World");' type='button' value='Voiceover' />
+	
+		<div id="inner">
+		<h1>test</h1>
+		<p>dette er en test</p>
+		</div>
+	</div>
+	
+<script>
+        var inner = document.getElementById("inner");
+        lrg.onclick = function() {
+            inner.style.fontSize = "2em";
+        }
+        sml.onclick = function() {
+            inner.style.fontSize = "1em";
+        }
+        ctrst.onclick = function() {
+            inner.style.color = "yellow";
+            outer.style.backgroundColor = "black";
+        }
+        nrml.onclick = function() {
+            inner.style.color = "black";
+            outer.style.backgroundColor = "white";
+        }
+</script>
+</body>
+</html>
